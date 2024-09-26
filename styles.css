@@ -1,0 +1,77 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+#voronoiCanvas {
+    border: 1px solid #ccc;
+    display: block;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#controls {
+    margin: 20px auto;
+}
+
+#resetButton, #exportButton {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 10px;
+}
+
+#resetButton {
+    background-color: #007BFF;
+    color: white;
+}
+
+#resetButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#exportButton {
+    background-color: #28a745;
+    color: white;
+}
+
+#exportButton:hover {
+    background-color: #1e7e34;
+    transform: scale(1.05);
+}
+
+circle {
+    fill: #000;
+    cursor: pointer;
+}
+
+circle:hover {
+    fill: #FF4136;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font: 12px sans-serif;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    pointer-events: none;
+    color: #333;
+}
